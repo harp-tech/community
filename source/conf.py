@@ -21,9 +21,9 @@ from datetime import datetime, timezone
 
 # -- Project information -----------------------------------------------------
 
-project = "Open Ephys Documentation"
+project = "HARP Documentation"
 copyright = "2010-{}, Open Ephys & Contributors".format(datetime.now(timezone.utc).year)
-author = "Open Ephys & Contributors"
+author = "Open Ephys Production Site & Contributors"
 
 # The short X.Y version
 version = "0.0"
@@ -78,7 +78,7 @@ todo_include_todos = True
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-html_logo = "_static/images/oe_logo_template.svg"
+html_logo = "_static/images/CF_harp.png"
 html_scaled_image_link = True
 
 
@@ -102,7 +102,7 @@ html_style = "_static/theme_overrides.css"
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "oe_docs"
+htmlhelp_basename = "harp_docs"
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -144,10 +144,10 @@ man_pages = [(main_doc, "oe-docs", "Open Ephys Documentation", [author], 1)]
 texinfo_documents = [
     (
         main_doc,
-        "Open Ephys Documentation",
-        "Open Ephys Documentation",
+        "HARP Documentation",
+        "HARP Documentation",
         author,
-        "Open Ephys Documentation",
+        "HARP Documentation",
         "Description",
         "Miscellaneous",
     ),
@@ -176,28 +176,17 @@ epub_exclude_files = ["search.html"]
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'external_links': [{'name': 'Open Ephys', 'url': 'https://open-ephys.org'},],
+    'external_links': [{'name': 'CF Hardware Platform', 'url': 'https://www.cf-hw.org/home'},],
     'navigation_with_keys': True,
     'use_edit_page_button': True,
     'show_toc_level': 1,
-    'icon_links': [
-        dict(name='GitHub',
-             url='https://github.com/open-ephys/onix-docs',
-             icon='fab fa-github'),
-        dict(name='Twitter',
-             url='https://twitter.com/openephys',
-             icon='fab fa-twitter'),
-        dict(name='Discord',
-             url='https://discord.gg/WXAx2URNQU',
-             icon='fab fa-discord')
-    ],
     'footer_items': ['copyright', 'sphinx-version'],
 }
-html_favicon = "_static/images/favicon.png"
+html_favicon = "_static/images/Logo_CF_centered.png"
 
 html_context = {
-    "github_user": "open-ephys",
-    "github_repo": "doc-template",
+    "github_user": "ahleighton",
+    "github_repo": "harp-docs",
     "github_version": "main",
     "doc_path": "source",
     "css_files": ["_static/theme_overrides.css",],
