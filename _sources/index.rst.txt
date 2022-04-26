@@ -1,39 +1,40 @@
 :notoc:
 
 *************************************************
-NAME OF DEVICE
+HARP
 *************************************************
 
 **Date**: |today|
 
-This site provides documentation for [INSERT PROJECT HERE], that [SHORT DESCRIPTION OF STUFF PROJECT DOES].
+This site provides documentation for HARP (HArdware Research Platform). HARP is a family of devices created and developed by the Champalimaud Foundation Hardware Platform since 2017 that provides an efficient, intuitive and friendly way of use within an high-performance environment of tools. Since all HARP devices are synchronized, several devices can be used in the same setup.
 
-It is currently under construction
-####################################
 
-It will eventually include the following information:
+.. raw:: html
 
-* Point 1
-* Point 2
-* Point 3
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
+      <div class="card border-light">
+        <img class="card-img-top" src="_static/images/harplogo.png" alt="harp logo" style="margin: auto">
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 d-flex" style="margin-top: 0em!important">
+      <div class="card border-light">
+        <div class="card-body" >
+          <p class="card-text">
+          <h2>Key Specifications<a class="headerlink" href="#key-specifications" title="Permalink to this headline">¶</a></h2>
+          <ul class="simple">
+          <li><p>Hardware synchronization</p></li>
+          <li><p>Growing family of devices</p></li>
+          <li><p>Share the same communication protocol and architecture</p></li>
+          <li><p>Graphical tools to configure each device</p></li>
+          <li><p>Event-based: creates small size data files from experiments</p></li>
+          <li><p>Bonsai, Matlab, LabVIEW, and Python compatibility</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-What to customize
-####################################
-Each documentation page is saved as an individual .rst file in the 'source' folder. Docs are written primarily in reStructuredText, and HTML can be used within the .rst file. Images are saved under _static. Besides obviously customizing the content of the pages, you will need to make sure to update:
-
-* license (at the end of primary index page)
-* conf.py:
-   * project = "OE docs"  # change to your project name
-   * "github_repo": "doc-template",  # change to new repo
-   * html_logo = "_static/images/oe_logo_template.svg" # change to svg with your logo
-
-      Change the device name on the logo "oe_logo_name.svg"
-      Miso, Bold, 36 pt, Kerning: Optical
-      Be sure to expand text before saving as .svg as Miso will not load as font.
-* theme_overrides.css
-   * Change overhead navigation bar colour (.navbar { background: yourfavecolour })
-* .github/workflows/sphinx-build.yml
-   * git clone https://github.com/open-ephys/doc-template.git # change to your repo
 
 .. raw:: html
 
@@ -43,30 +44,30 @@ Each documentation page is saved as an individual .rst file in the 'source' fold
       <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
-            <a href = pages/assemblyguide.html>
+            <a href = About/How-HARP-works/index.html>
                 <img src="_static/images/noun_screwdriver.svg" class="card-img-top" height="160">
                 <div class="card-body flex-fill">
-                  <p class="card-reference">TOPIC 1</p>
+                  <p class="card-reference">How HARP works</p>
                 </div>
             </a>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
-            <a href = pages/usingdrive.html>
+            <a href = About/How-to-use/index.html>
                 <img src="_static/images/noun_books.svg" class="card-img-top" height="160">
                 <div class="card-body flex-fill">
-                  <p class="card-reference">TOPIC 2</p>
+                  <p class="card-reference">Using HARP</p>
                 </div>
             </a>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
-            <a href = "https://iopscience.iop.org/article/10.1088/1741-2552/ab77f9" target="_blank" rel="noopener noreferrer">
+            <a href = "Devices/devicelist" target="_blank" rel="noopener noreferrer">
               <img src="_static/images/paper.svg" class="card-img-top" height="160">
               <div class="card-body flex-fill">
-                <p class="card-reference">TOPIC 3 </p>
+                <p class="card-reference">HARP device list</p>
               </div>
             </a>
 
@@ -74,10 +75,10 @@ Each documentation page is saved as an individual .rst file in the 'source' fold
         </div>
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
-            <a href = "https://open-ephys.org/drive-implant/drive-parts" target="_blank" rel="noopener noreferrer">
+            <a href = "https://www.cf-hw.org/home" target="_blank" rel="noopener noreferrer">
               <img src="_static/images/noun_macbook.svg" class="card-img-top" height="160" >
               <div class="card-body flex-fill">
-                <p class="card-reference">TOPIC 4 IS EXTERNAL LINK<i class="fas fa-external-link-alt" style = "font-size:0.5em; vertical-align: super"></i></p>
+                <p class="card-reference">Hardware Platform Website<i class="fas fa-external-link-alt" style = "font-size:0.5em; vertical-align: super"></i></p>
               </div>
             </a>
           </div>
@@ -98,3 +99,4 @@ To view a copy of this license, visit https://creativecommons.org/licenses/by-sa
     :titlesonly:
 
     About/index
+    Devices/devicelist
