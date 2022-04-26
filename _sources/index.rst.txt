@@ -54,7 +54,7 @@ This site provides documentation for HARP (HArdware Research Platform). HARP is 
         </div>
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
-            <a href = About/How-to-use/index.html>
+            <a href = About/Using-HARP/index.html>
                 <img src="_static/images/noun_books.svg" class="card-img-top" height="160">
                 <div class="card-body flex-fill">
                   <p class="card-reference">Using HARP</p>
