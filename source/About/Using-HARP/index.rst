@@ -1,11 +1,5 @@
-.. _about:
+:notoc:
 
 *************************************************
-About
+Using HARP
 *************************************************
-
-.. toctree::
-    :maxdepth: 1
-
-    How-HARP-works
-    Using-HARP
