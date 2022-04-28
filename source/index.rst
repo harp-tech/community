@@ -41,7 +41,7 @@ This site provides documentation for HARP (HArdware Research Platform). HARP is 
     <h2 style = "text-align: center"> Getting Started </h2>
 
     <div class="container">
-      <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
+      <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1 row-cols-xs-1">
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
             <a href = About/How-HARP-works/index.html>
@@ -65,20 +65,9 @@ This site provides documentation for HARP (HArdware Research Platform). HARP is 
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
             <a href = "Devices/devicelist" target="_blank" rel="noopener noreferrer">
-              <img src="_static/images/paper.svg" class="card-img-top" height="160">
+              <img src="_static/images/noun_macbook.svg" class="card-img-top" height="160">
               <div class="card-body flex-fill">
                 <p class="card-reference">HARP device list</p>
-              </div>
-            </a>
-
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card h-100 text-center intro-card shadow">
-            <a href = "https://www.cf-hw.org/home" target="_blank" rel="noopener noreferrer">
-              <img src="_static/images/noun_macbook.svg" class="card-img-top" height="160" >
-              <div class="card-body flex-fill">
-                <p class="card-reference">Hardware Platform Website<i class="fas fa-external-link-alt" style = "font-size:0.5em; vertical-align: super"></i></p>
               </div>
             </a>
           </div>
