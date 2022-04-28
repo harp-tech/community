@@ -78,7 +78,7 @@ todo_include_todos = True
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-html_logo = "_static/images/CF_harp.png"
+html_logo = "_static/images/harp.png"
 html_scaled_image_link = True
 
 
@@ -176,13 +176,12 @@ epub_exclude_files = ["search.html"]
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'external_links': [{'name': 'CF Hardware Platform', 'url': 'https://www.cf-hw.org/home'},],
     'navigation_with_keys': True,
     'use_edit_page_button': True,
     'show_toc_level': 1,
     'footer_items': ['copyright', 'sphinx-version'],
 }
-html_favicon = "_static/images/Logo_CF_centered.png"
+html_favicon = "_static/images/harp.png"
 
 html_context = {
     "github_user": "ahleighton",
