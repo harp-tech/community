@@ -7,5 +7,5 @@ About
 .. toctree::
     :maxdepth: 1
 
-    How-HARP-works
-    Using-HARP
+    How-HARP-works/index.rst
+    Using-HARP/index.rst
