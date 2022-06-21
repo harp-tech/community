@@ -33,6 +33,17 @@
   font-weight: bold;
 }
 
+.red {
+         color: red;
+ }
+
+ .blue {
+         color: #03b6fc;
+ }
+
+ .green {
+         color: #95d147;
+ }
 /* overhead navigation bar*/
 .navbar {
   background: #36a4e3 !important; /* overhead navigation bar color */
@@ -42,8 +53,8 @@
 /* navigation bar: text*/
 .navbar a {
   color: white !important;
-  font-family: "Bitter";
-  font-size: 1rem;
+  font-family: "Source Sans";
+  font-size: 1.3rem;
   transition-duration: 0.4s;
   margin-right: 10px;
 }
@@ -111,10 +122,10 @@ a.external-link:after {
 
 p.card-reference {
   margin: 2.75rem 0 1.05rem;
-  font-family: "Bitter", sans-serif;
+  font-family: "Source Sans", sans-serif;
   font-weight: 400;
   line-height: 1.15;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 /* header links */
@@ -141,7 +152,7 @@ body {
 
 h1 {
     margin: 2.75rem 0 1.05rem;
-    font-family: "Bitter";
+    font-family: "Source Sans";
     font-weight: 400;
     line-height: 1.15;
     text-align: center;
@@ -152,7 +163,7 @@ h1 {
 
 h2 {
   margin: 2.75rem 0 1.05rem;
-  font-family: "Bitter";
+  font-family: "Source Sans";
   font-weight: 500;
   line-height: 1.15;
   color: #242c16;
@@ -376,6 +387,7 @@ body > li,
 p {
   line-height: 1.5;
   margin: 0.3rem 0;
+  list-style-type: square;
 }
 
 /* ensure images stay within the column bounds*/
@@ -393,4 +405,61 @@ img.align-center {
 /* change color of Twitter logo */
 i.fa-twitter-square:before {
   color: #333;
+}
+
+/* Added to be able to filter devices */
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.filterDiv {
+  float: left;
+  background-color: white;
+  color: #ffffff;
+  line-height: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* format Key Features list*/
+.deviceFeatures {
+  margin-top: 1rem;
+  background-color: #dce4e8;
+  padding: 0.1rem 1rem;
+}
+
+.deviceDescription {
+  font-size: 1.2rem;
+  justify-content: center;
+  align-content: center;
+  padding-top: 1rem;
 }

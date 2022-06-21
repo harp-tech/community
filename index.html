@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>HARP &#8212; HARP Documentation 0.0.0 documentation</title>
+    <title>License &#8212; HARP Documentation 0.0.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -77,7 +77,19 @@
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="Devices/devicelist.html">
-  Devices
+  Device List
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="About/Using-HARP/index.html">
+  Using HARP
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="About/How-HARP-works/index.html">
+  How HARP works
  </a>
 </li>
 
@@ -94,6 +106,13 @@
       </ul>
       </div>
       
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+      </div>
+      
     </div>
   </div>
 </div>
@@ -104,20 +123,7 @@
       <div class="row">
           
             
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">
-              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <div class="bd-toc-item active">
-    
-  </div>
-</nav>
-              </div>
-              <div class="sidebar-end-items">
-              </div>
-            </div>
+            <div class="col-12 col-md-1 col-xl-2 bd-sidebar no-sidebar"></div>
             
           
 
@@ -131,33 +137,57 @@
           
             
           
-          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+          <main class="col-12 col-md-11 col-xl-8 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
                 
-  <section id="harp">
-<h1>HARP<a class="headerlink" href="#harp" title="Permalink to this headline">#</a></h1>
-<p><strong>Date</strong>: Apr 28, 2022</p>
-<p>This site provides documentation for HARP (HArdware Research Platform). HARP is a family of devices created and developed by the Champalimaud Foundation Hardware Platform since 2017 that provides an efficient, intuitive and friendly way of use within an high-performance environment of tools. Since all HARP devices are synchronized, several devices can be used in the same setup.</p>
+  <a class="reference internal image-reference" href="_images/harplogo.png"><img alt="_images/harplogo.png" class="align-center" src="_images/harplogo.png" style="width: 222.0px; height: 101.39999999999999px;" /></a>
+<p><strong>Date</strong>: Jun 21, 2022</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="_images/behaviour_peripherals.jpg"><img alt="_images/behaviour_peripherals.jpg" src="_images/behaviour_peripherals.jpg" style="width: 331.8px; height: 291.59999999999997px;" /></a>
+</figure>
+<p>Neuroscience experiments often rely on multiple parallel datastreams, acquired from different devices at different frequencies. As setups increase in complexity, temporally aligning these datastreams  rapidly becomes more difficult.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Harp is a family of devices that configure, control, &amp; track a wide range of peripheral devices such as cameras, LEDs, nosepokes, &amp; motors. Combining Harp devices is an easy way to extend experimental setup functionality with integrated timestamp synchronisation across devices.</p>
+<p><a class="reference internal" href="About/How-HARP-works/index.html#whyharp"><span class="std std-ref">More about why Harp was developed</span></a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>See here for a list of existing devices. Don’t see what you’re looking for? Harp protocols were designed so that new devices can be developed that will interact seamlessly with existing tools.</p>
+<p><span class="xref std std-ref">More about Harp protocols</span></p>
 <div class="row">
-  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex" style="margin-top: 0em!important">
     <div class="card border-light">
-      <img class="card-img-top" src="_static/images/harplogo.png" alt="harp logo" style="margin: auto">
+      <h5 class="card-title text-center">Using Harp Devices</h5>
+      <img class="card-img-top" src="_static/images/harp_features_overview.png" alt="Infographic showcasing HARP" style="margin: auto">
     </div>
   </div>
-  <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 d-flex" style="margin-top: 0em!important">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex" style="margin-top: 0em!important">
     <div class="card border-light">
+    <h5 class="card-title text-center">Key Specifications</h5>
       <div class="card-body" >
-        <p class="card-text">
-        <h2>Key Specifications<a class="headerlink" href="#key-specifications" title="Permalink to this headline">¶</a></h2>
-        <ul class="simple">
-        <li><p>Hardware synchronization</p></li>
-        <li><p>Growing family of devices</p></li>
-        <li><p>Share the same communication protocol and architecture</p></li>
-        <li><p>Graphical tools to configure each device</p></li>
-        <li><p>Event-based: creates small size data files from experiments</p></li>
-        <li><p>Bonsai, Matlab, LabVIEW, and Python compatibility</p></li>
-        </ul>
+        <p class="card-text"><p><strong>Communication protocol and architecture standardized across devices</strong></p>
+<blockquote>
+<div><p><em>Streamlined communication when adding new devices to setup, and reduces time and effort of developing new devices</em></p>
+</div></blockquote>
+<p><strong>Integrated hardware synchronization</strong></p>
+<blockquote>
+<div><p><em>Eliminates need for extra inter-device synchronization TTLs or post-hoc timestamp alignment</em></p>
+</div></blockquote>
+<p><strong>Intuitive graphical tools for device configuration</strong></p>
+<blockquote>
+<div><p><em>Easy to choose the settings your setup requires</em></p>
+</div></blockquote>
+<p><strong>Event-based protocol</strong></p>
+<blockquote>
+<div><p><em>Smaller file sizes as data is transmitted when changes occur, rather than at set frequencies like in traditional hardware</em></p>
+</div></blockquote>
+<p><strong>Bonsai, Matlab, LabVIEW, and Python compatible</strong></p>
+<blockquote>
+<div><p><em>Easily integrate synchronized data into existing analysis pipelines</em></p>
+</div></blockquote>
       </div>
     </div>
   </div>
@@ -168,7 +198,7 @@
     <div class="col mb-4">
       <div class="card h-100 text-center intro-card shadow">
         <a href = About/How-HARP-works/index.html>
-            <img src="_static/images/noun_screwdriver.svg" class="card-img-top" height="160">
+            <img src="_static/images/noun_books.svg" class="card-img-top" height="160">
             <div class="card-body flex-fill">
               <p class="card-reference">How HARP works</p>
             </div>
@@ -178,7 +208,7 @@
     <div class="col mb-4">
       <div class="card h-100 text-center intro-card shadow">
         <a href = About/Using-HARP/index.html>
-            <img src="_static/images/noun_books.svg" class="card-img-top" height="160">
+            <img src="_static/images/noun_screwdriver.svg" class="card-img-top" height="160">
             <div class="card-body flex-fill">
               <p class="card-reference">Using HARP</p>
             </div>
@@ -187,7 +217,7 @@
     </div>
     <div class="col mb-4">
       <div class="card h-100 text-center intro-card shadow">
-        <a href = "Devices/devicelist" target="_blank" rel="noopener noreferrer">
+        <a href = "Devices/devicelist.html" target="_blank" rel="noopener noreferrer">
           <img src="_static/images/noun_macbook.svg" class="card-img-top" height="160">
           <div class="card-body flex-fill">
             <p class="card-reference">HARP device list</p>
@@ -197,12 +227,11 @@
     </div>
   </div>
 </div><section id="license">
-<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">#</a></h2>
+<h1>License<a class="headerlink" href="#license" title="Permalink to this headline">#</a></h1>
 <p>This work is licensed under CC BY-SA 4.0.</p>
 <p>To view a copy of this license, visit <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></p>
 <div class="toctree-wrapper compound">
 </div>
-</section>
 </section>
 
 

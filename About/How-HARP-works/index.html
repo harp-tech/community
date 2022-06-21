@@ -70,7 +70,7 @@
       
       <div class="navbar-center-item">
         <ul id="navbar-main-elements" class="navbar-nav">
-    <li class="toctree-l1 current active nav-item">
+    <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../index.html">
   About
  </a>
@@ -78,7 +78,19 @@
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../../Devices/devicelist.html">
-  Devices
+  Device List
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../Using-HARP/index.html">
+  Using HARP
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
+  How HARP works
  </a>
 </li>
 
@@ -95,6 +107,13 @@
       </ul>
       </div>
       
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+      </div>
+      
     </div>
   </div>
 </div>
@@ -105,32 +124,7 @@
       <div class="row">
           
             
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">
-              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <div class="bd-toc-item active">
-    <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   How HARP works
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Using-HARP/index.html">
-   Using HARP
-  </a>
- </li>
-</ul>
-
-  </div>
-</nav>
-              </div>
-              <div class="sidebar-end-items">
-              </div>
-            </div>
+            <div class="col-12 col-md-1 col-xl-2 bd-sidebar no-sidebar"></div>
             
           
 
@@ -144,12 +138,23 @@
           
             
           
-          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+          <main class="col-12 col-md-11 col-xl-8 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
                 
   <section id="how-harp-works">
 <h1>How HARP works<a class="headerlink" href="#how-harp-works" title="Permalink to this headline">#</a></h1>
+<section id="why-harp-was-developed">
+<h2>Why HARP was developed<a class="headerlink" href="#why-harp-was-developed" title="Permalink to this headline">#</a></h2>
+<p>Current Neuroscience experiments rely on multiple parallel streams of data, acquired from different devices, to examine how neural circuit activity relates to animal behaviours. This requires precise timestamping of experimental events, so that neural and behavioural data can be accurately ordered in time. Temporally aligning different streams of data, often acquired at different frequencies, rapidly becomes more difficult as setups increase in complexity.</p>
+<p>Harp is a family of high-performance devices that make it easy for scientists to synchronize and extend the functionality of their setups. Harp devices can configure, control, &amp; track a wide range of peripheral devices such as cameras, LEDs, nosepokes, &amp; motors. Connecting an extra HARP device is a straightforward way to add extra functionality to a setup. All HARP devices can be connected to a shared clock line, self-synchronizing to a precision of tens of microseconds. This means that all experimental events are timestamped on the same clock and no post-hoc alignment of timing is necessary.</p>
+<p>From an engineering perspective, extending the functionality of a setup can also be difficult, if this requires developing a new device, including how this device will communicates with a computer, and how users will interact with the device. By agreeing beforehand how the entire family of devices will communicate, engineers do not have to reinvent or attune protocols each time they wish to develop a new device. This leads to faster, cheaper, and more robust development.</p>
+</section>
+<section id="what-is-harp">
+<h2>What is HARP<a class="headerlink" href="#what-is-harp" title="Permalink to this headline">#</a></h2>
+<p>HARP describes a communication protocol and architecture, as well as specific devices that implement these structures.</p>
+<p><a class="reference internal" href="binary_protocol.html#refbinaryprotocol"><span class="std std-ref">The binary protocol is described here.</span></a></p>
+</section>
 </section>
 
 

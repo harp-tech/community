@@ -1,39 +1,68 @@
 :notoc:
 
-*************************************************
-HARP
-*************************************************
+.. image:: _static/images/harplogo.png
+  :scale: 30%
+  :align: center
 
 **Date**: |today|
 
-This site provides documentation for HARP (HArdware Research Platform). HARP is a family of devices created and developed by the Champalimaud Foundation Hardware Platform since 2017 that provides an efficient, intuitive and friendly way of use within an high-performance environment of tools. Since all HARP devices are synchronized, several devices can be used in the same setup.
+.. figure:: _static/images/devices/behaviour_peripherals.jpg
+  :scale: 30%
+  :align: right
 
+Neuroscience experiments often rely on multiple parallel datastreams, acquired from different devices at different frequencies. As setups increase in complexity, temporally aligning these datastreams  rapidly becomes more difficult.
+
+|
+
+Harp is a family of devices that configure, control, & track a wide range of peripheral devices such as cameras, LEDs, nosepokes, & motors. Combining Harp devices is an easy way to extend experimental setup functionality with integrated timestamp synchronisation across devices.
+
+:ref:`More about why Harp was developed <whyharp>`
+
+|
+
+See here for a list of existing devices. Don't see what you're looking for? Harp protocols were designed so that new devices can be developed that will interact seamlessly with existing tools.
+
+:ref:`More about Harp protocols <refprotocols>`
 
 .. raw:: html
 
   <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex" style="margin-top: 0em!important">
       <div class="card border-light">
-        <img class="card-img-top" src="_static/images/harplogo.png" alt="harp logo" style="margin: auto">
+        <h5 class="card-title text-center">Using Harp Devices</h5>
+        <img class="card-img-top" src="_static/images/harp_features_overview.png" alt="Infographic showcasing HARP" style="margin: auto">
       </div>
     </div>
-    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 d-flex" style="margin-top: 0em!important">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex" style="margin-top: 0em!important">
       <div class="card border-light">
+      <h5 class="card-title text-center">Key Specifications</h5>
         <div class="card-body" >
           <p class="card-text">
-          <h2>Key Specifications<a class="headerlink" href="#key-specifications" title="Permalink to this headline">¶</a></h2>
-          <ul class="simple">
-          <li><p>Hardware synchronization</p></li>
-          <li><p>Growing family of devices</p></li>
-          <li><p>Share the same communication protocol and architecture</p></li>
-          <li><p>Graphical tools to configure each device</p></li>
-          <li><p>Event-based: creates small size data files from experiments</p></li>
-          <li><p>Bonsai, Matlab, LabVIEW, and Python compatibility</p></li>
-          </ul>
+
+**Communication protocol and architecture standardized across devices**
+
+  *Streamlined communication when adding new devices to setup, and reduces time and effort of developing new devices*
+**Integrated hardware synchronization**
+
+  *Eliminates need for extra inter-device synchronization TTLs or post-hoc timestamp alignment*
+**Intuitive graphical tools for device configuration**
+
+  *Easy to choose the settings your setup requires*
+**Event-based protocol**
+
+  *Smaller file sizes as data is transmitted when changes occur, rather than at set frequencies like in traditional hardware*
+
+**Bonsai, Matlab, LabVIEW, and Python compatible**
+
+  *Easily integrate synchronized data into existing analysis pipelines*
+
+
+.. raw:: html
+
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
 
 .. raw:: html
@@ -45,7 +74,7 @@ This site provides documentation for HARP (HArdware Research Platform). HARP is 
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
             <a href = About/How-HARP-works/index.html>
-                <img src="_static/images/noun_screwdriver.svg" class="card-img-top" height="160">
+                <img src="_static/images/noun_books.svg" class="card-img-top" height="160">
                 <div class="card-body flex-fill">
                   <p class="card-reference">How HARP works</p>
                 </div>
@@ -55,7 +84,7 @@ This site provides documentation for HARP (HArdware Research Platform). HARP is 
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
             <a href = About/Using-HARP/index.html>
-                <img src="_static/images/noun_books.svg" class="card-img-top" height="160">
+                <img src="_static/images/noun_screwdriver.svg" class="card-img-top" height="160">
                 <div class="card-body flex-fill">
                   <p class="card-reference">Using HARP</p>
                 </div>
@@ -64,7 +93,7 @@ This site provides documentation for HARP (HArdware Research Platform). HARP is 
         </div>
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
-            <a href = "Devices/devicelist" target="_blank" rel="noopener noreferrer">
+            <a href = "Devices/devicelist.html" target="_blank" rel="noopener noreferrer">
               <img src="_static/images/noun_macbook.svg" class="card-img-top" height="160">
               <div class="card-body flex-fill">
                 <p class="card-reference">HARP device list</p>
@@ -84,8 +113,9 @@ To view a copy of this license, visit https://creativecommons.org/licenses/by-sa
 
 .. toctree::
     :hidden:
-    :maxdepth: 2
     :titlesonly:
 
     About/index
     Devices/devicelist
+    About/Using-HARP/index
+    About/How-HARP-works/index
