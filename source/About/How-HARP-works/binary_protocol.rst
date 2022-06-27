@@ -99,7 +99,7 @@ _____________________________
     <table>
         <thead>
             <tr>
-                <th colspan="2">The table header</th>
+                <th colspan="2"></th>
             </tr>
         </thead>
         <tbody>
