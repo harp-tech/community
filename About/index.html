@@ -32,7 +32,7 @@
     <link rel="shortcut icon" href="../_static/harp.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="How HARP works" href="How-HARP-works/index.html" />
+    <link rel="next" title="Harp Protocols" href="How-HARP-works/index.html" />
     <link rel="prev" title="License" href="../index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -77,7 +77,7 @@
 </li>
 
 <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../Devices/devicelist.html">
+ <a class="reference internal nav-link" href="../Devices/devicelist_filter.html">
   Device List
  </a>
 </li>
@@ -90,7 +90,7 @@
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="How-HARP-works/index.html">
-  How HARP works
+  Harp Protocols
  </a>
 </li>
 
@@ -134,9 +134,24 @@
               
               <div class="toc-item">
                 
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
-    
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-harp">
+   What is HARP
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-harp-was-developed">
+   Why HARP was developed
+  </a>
+ </li>
+</ul>
+
 </nav>
               </div>
               
@@ -165,12 +180,27 @@
                 
   <section id="about">
 <span id="id1"></span><h1>About<a class="headerlink" href="#about" title="Permalink to this headline">#</a></h1>
+<section id="what-is-harp">
+<h2>What is HARP<a class="headerlink" href="#what-is-harp" title="Permalink to this headline">#</a></h2>
+<p>HARP describes a communication protocol and architecture, as well as specific devices that implement these structures.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="How-HARP-works/index.html">How HARP works</a></li>
+<li class="toctree-l1"><a class="reference internal" href="How-HARP-works/index.html">Harp Protocols</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="How-HARP-works/binary_protocol.html">Harp Binary Protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="How-HARP-works/clock_sync.html">Synchronization Clock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="How-HARP-works/common_registers_operation_devices.html">Harp device common registers and operation</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Using-HARP/index.html">Using HARP</a></li>
 </ul>
 </div>
+</section>
+<section id="why-harp-was-developed">
+<span id="whyharp"></span><h2>Why HARP was developed<a class="headerlink" href="#why-harp-was-developed" title="Permalink to this headline">#</a></h2>
+<p>Current Neuroscience experiments rely on multiple parallel streams of data, acquired from different devices, to examine how neural circuit activity relates to animal behaviours. This requires precise timestamping of experimental events, so that neural and behavioural data can be accurately ordered in time. Temporally aligning different streams of data, often acquired at different frequencies, rapidly becomes more difficult as setups increase in complexity.</p>
+<p>Harp is a family of high-performance devices that make it easy for scientists to synchronize and extend the functionality of their setups. Harp devices can configure, control, &amp; track a wide range of peripheral devices such as cameras, LEDs, nosepokes, &amp; motors. Connecting an extra HARP device is a straightforward way to add extra functionality to a setup. All HARP devices can be connected to a shared clock line, self-synchronizing to a precision of tens of microseconds. This means that all experimental events are timestamped on the same clock and no post-hoc alignment of timing is necessary.</p>
+<p>From an engineering perspective, extending the functionality of a setup can also be difficult, if this requires developing a new device, including how this device will communicates with a computer, and how users will interact with the device. By agreeing beforehand how the entire family of devices will communicate, engineers do not have to reinvent or attune protocols each time they wish to develop a new device. This leads to faster, cheaper, and more robust development.</p>
+</section>
 </section>
 
 
@@ -189,7 +219,7 @@
     <a class='right-next' id="next-link" href="How-HARP-works/index.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">How HARP works</p>
+        <p class="prev-next-title">Harp Protocols</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

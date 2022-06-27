@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>How HARP works &#8212; HARP Documentation 0.0.0 documentation</title>
+    <title>Harp Protocols &#8212; HARP Documentation 0.0.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,7 +32,7 @@
     <link rel="shortcut icon" href="../../_static/harp.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Using HARP" href="../Using-HARP/index.html" />
+    <link rel="next" title="Harp Binary Protocol" href="binary_protocol.html" />
     <link rel="prev" title="About" href="../index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -77,7 +77,7 @@
 </li>
 
 <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../Devices/devicelist.html">
+ <a class="reference internal nav-link" href="../../Devices/devicelist_filter.html">
   Device List
  </a>
 </li>
@@ -90,7 +90,7 @@
 
 <li class="toctree-l1 current active nav-item">
  <a class="current reference internal nav-link" href="#">
-  How HARP works
+  Harp Protocols
  </a>
 </li>
 
@@ -131,6 +131,27 @@
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/ahleighton/harp-docs/edit/main/source/About/How-HARP-works/index.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
           </div>
           
 
@@ -142,19 +163,30 @@
               
               <div>
                 
-  <section id="how-harp-works">
-<h1>How HARP works<a class="headerlink" href="#how-harp-works" title="Permalink to this headline">#</a></h1>
-<section id="why-harp-was-developed">
-<h2>Why HARP was developed<a class="headerlink" href="#why-harp-was-developed" title="Permalink to this headline">#</a></h2>
-<p>Current Neuroscience experiments rely on multiple parallel streams of data, acquired from different devices, to examine how neural circuit activity relates to animal behaviours. This requires precise timestamping of experimental events, so that neural and behavioural data can be accurately ordered in time. Temporally aligning different streams of data, often acquired at different frequencies, rapidly becomes more difficult as setups increase in complexity.</p>
-<p>Harp is a family of high-performance devices that make it easy for scientists to synchronize and extend the functionality of their setups. Harp devices can configure, control, &amp; track a wide range of peripheral devices such as cameras, LEDs, nosepokes, &amp; motors. Connecting an extra HARP device is a straightforward way to add extra functionality to a setup. All HARP devices can be connected to a shared clock line, self-synchronizing to a precision of tens of microseconds. This means that all experimental events are timestamped on the same clock and no post-hoc alignment of timing is necessary.</p>
-<p>From an engineering perspective, extending the functionality of a setup can also be difficult, if this requires developing a new device, including how this device will communicates with a computer, and how users will interact with the device. By agreeing beforehand how the entire family of devices will communicate, engineers do not have to reinvent or attune protocols each time they wish to develop a new device. This leads to faster, cheaper, and more robust development.</p>
-</section>
-<section id="what-is-harp">
-<h2>What is HARP<a class="headerlink" href="#what-is-harp" title="Permalink to this headline">#</a></h2>
+  <section id="harp-protocols">
+<h1>Harp Protocols<a class="headerlink" href="#harp-protocols" title="Permalink to this headline">#</a></h1>
 <p>HARP describes a communication protocol and architecture, as well as specific devices that implement these structures.</p>
-<p><a class="reference internal" href="binary_protocol.html#refbinaryprotocol"><span class="std std-ref">The binary protocol is described here.</span></a></p>
-</section>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="binary_protocol.html">Harp Binary Protocol</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="binary_protocol.html#registers">1. Registers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binary_protocol.html#messages">2. Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binary_protocol.html#typical-usage">3. Typical Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="clock_sync.html">Synchronization Clock</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="clock_sync.html#introduction">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clock_sync.html#serial-configuration">2. Serial configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clock_sync.html#physical-connection">4. Physical connection</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="common_registers_operation_devices.html">Harp device common registers and operation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="common_registers_operation_devices.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="common_registers_operation_devices.html#registers">Registers</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </section>
 
 
@@ -170,10 +202,10 @@
             <p class="prev-next-title">About</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../Using-HARP/index.html" title="next page">
+    <a class='right-next' id="next-link" href="binary_protocol.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Using HARP</p>
+        <p class="prev-next-title">Harp Binary Protocol</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
