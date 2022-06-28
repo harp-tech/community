@@ -32,6 +32,7 @@ The packet is composed of 6 bytes (header[2] and timestamp_s[4])
     Since there's no checksum to validate the packet, the sender must make sure that, if the header sequence is present in the, the packet is not sent.
 
 3. Example code
+------------------------------------------
 Example of a microcontroller C code: ::
 
   ISR(TCD0_OVF_vect, ISR_NAKED)
