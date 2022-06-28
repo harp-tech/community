@@ -499,3 +499,11 @@ th.highlight {
 	width: 80%;
   border: 1.5px solid;
 }
+
+.button.github {
+  background-color:#8fbd98;
+  border-color:#8fbd98;
+  color: black!important;
+  width: 50%;
+  margin:20px;
+}
