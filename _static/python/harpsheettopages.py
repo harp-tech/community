@@ -58,7 +58,7 @@ for count, idevice in enumerate(devicedata):
 
     deviceHandle = devicedata[count].get("deviceHandle")
 
-    devicePage = devicePage.replace('DEVICEHANDLE', "alldevices\\" + deviceHandle)
+    devicePage = devicePage.replace('DEVICEHANDLE', deviceHandle)
     
     devicePage = devicePage.replace('REFDEVICE',deviceHandle)
     
@@ -71,7 +71,9 @@ for count, idevice in enumerate(devicedata):
     devicePage = devicePage.replace('SOFTWARELINK', devicedata[count].get("softwareLink"))
     
     devicePage = devicePage.replace('DESCRIPTION', devicedata[count].get("description"))
-    
+
+    devicePage = devicePage.replace('GITHUBLINK', devicedata[count].get("github"))
+        
     deviceCard = deviceCard.replace('CARDTEXT', devicedata[count].get("cardText"))
     
     deviceCard = deviceCard.replace('DEVICENAME', devicedata[count].get("deviceName"))
