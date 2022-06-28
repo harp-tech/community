@@ -6,9 +6,13 @@
 
 **Date**: |today|
 
-.. figure:: _static/images/devices/behaviour_peripherals.jpg
-  :scale: 30%
-  :align: right
+
+.. raw:: html
+
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex" style="margin-top: 0em!important">
+      <div class="card border-light">
+
 
 Neuroscience experiments often rely on multiple parallel datastreams, acquired from different devices at different frequencies. As setups increase in complexity, temporally aligning these datastreams  rapidly becomes more difficult.
 
@@ -23,6 +27,17 @@ Harp is a family of devices that configure, control, & track a wide range of per
 See here for a list of existing devices. Don't see what you're looking for? Harp protocols were designed so that new devices can be developed that will interact seamlessly with existing tools.
 
 :ref:`More about Harp protocols <refprotocols>`
+
+.. raw:: html
+
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex" style="margin-top: 0em!important">
+      <div class="card border-light">
+      <img class="card-img-top" src="_static/images/devices/behaviour_peripherals.jpg" style="align: right; scale: 30%">
+      </div>
+    </div>
+  </div>
 
 .. raw:: html
 
