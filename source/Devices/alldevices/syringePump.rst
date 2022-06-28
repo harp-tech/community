@@ -1,7 +1,7 @@
-.. _REFDEVICE:
+.. _syringePump:
 
 *************************************************
-Input Expander
+Syringe Pump
 *************************************************
 
 .. raw:: html
@@ -16,7 +16,7 @@ Input Expander
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light">
-            <img class="card-img-top" src="../_static/images/devices/inputExpander.png" alt = "Photo of device Input Expander" style="margin: 0 auto; width: 75%">
+            <img class="card-img-top" src="../_static/images/devices/alldevices\syringePump.png" alt = "Photo of device Syringe Pump" style="margin: 0 auto; width: 75%">
           </div>
         </div>
       </div>

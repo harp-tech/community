@@ -1,7 +1,7 @@
-.. _REFDEVICE:
+.. _loadCellsReader:
 
 *************************************************
-Wear Wireless Motion Sensor
+Load Cells Reader
 *************************************************
 
 .. raw:: html
@@ -9,14 +9,14 @@ Wear Wireless Motion Sensor
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card card-body" >
-            <div class="deviceDescription">
+            <div class="deviceDescription">This device is an ADC interface for reading load cells values and output to the Load Cells interface device.
             </div>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light">
-            <img class="card-img-top" src="../_static/images/devices/wearWirelessSensor.png" alt = "Photo of device Wear Wireless Motion Sensor" style="margin: 0 auto; width: 75%">
+            <img class="card-img-top" src="../_static/images/devices/alldevices\loadCellsReader.png" alt = "Photo of device Load Cells Reader" style="margin: 0 auto; width: 75%">
           </div>
         </div>
       </div>

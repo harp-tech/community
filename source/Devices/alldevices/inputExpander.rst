@@ -1,7 +1,7 @@
-.. _REFDEVICE:
+.. _inputExpander:
 
 *************************************************
-Output Expander
+Input Expander
 *************************************************
 
 .. raw:: html
@@ -16,7 +16,7 @@ Output Expander
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light">
-            <img class="card-img-top" src="../_static/images/devices/outputExpander.png" alt = "Photo of device Output Expander" style="margin: 0 auto; width: 75%">
+            <img class="card-img-top" src="../_static/images/devices/alldevices\inputExpander.png" alt = "Photo of device Input Expander" style="margin: 0 auto; width: 75%">
           </div>
         </div>
       </div>

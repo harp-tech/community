@@ -1,7 +1,7 @@
-.. _REFDEVICE:
+.. _wearWirelessSensor:
 
 *************************************************
-Sound Board Gen1
+Wear Wireless Motion Sensor
 *************************************************
 
 .. raw:: html
@@ -16,7 +16,7 @@ Sound Board Gen1
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light">
-            <img class="card-img-top" src="../_static/images/devices/soundBoard.png" alt = "Photo of device Sound Board Gen1" style="margin: 0 auto; width: 75%">
+            <img class="card-img-top" src="../_static/images/devices/alldevices\wearWirelessSensor.png" alt = "Photo of device Wear Wireless Motion Sensor" style="margin: 0 auto; width: 75%">
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
-.. _REFDEVICE:
+.. _clockSynchronizer:
 
 *************************************************
-IBL Behavior Control
+Clock synchronizer
 *************************************************
 
 .. raw:: html
@@ -16,7 +16,7 @@ IBL Behavior Control
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light">
-            <img class="card-img-top" src="../_static/images/devices/.png" alt = "Photo of device IBL Behavior Control" style="margin: 0 auto; width: 75%">
+            <img class="card-img-top" src="../_static/images/devices/alldevices\clockSynchronizer.png" alt = "Photo of device Clock synchronizer" style="margin: 0 auto; width: 75%">
           </div>
         </div>
       </div>

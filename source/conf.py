@@ -88,6 +88,10 @@ html_static_path = ["_static"]
 
 html_style = "_static/theme_overrides.css"
 
+html_js_files = [
+    '_static/custom.js',
+]
+
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #

@@ -1,7 +1,7 @@
-.. _REFDEVICE:
+.. _ibldevice:
 
 *************************************************
-Camera controller Gen1
+IBL Behavior Control
 *************************************************
 
 .. raw:: html
@@ -16,7 +16,7 @@ Camera controller Gen1
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light">
-            <img class="card-img-top" src="../_static/images/devices/cameraController.png" alt = "Photo of device Camera controller Gen1" style="margin: 0 auto; width: 75%">
+            <img class="card-img-top" src="../_static/images/devices/alldevices\ibldevice.png" alt = "Photo of device IBL Behavior Control" style="margin: 0 auto; width: 75%">
           </div>
         </div>
       </div>

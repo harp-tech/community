@@ -1,4 +1,4 @@
-.. _REFDEVICE:
+.. _behaviorDevice:
 
 *************************************************
 Behavior
@@ -9,14 +9,14 @@ Behavior
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card card-body" >
-            <div class="deviceDescription">This is a multi-purpose device specially fit for behavior experiments. It allows to control pokes, RGB LEDs, LEDs, cameras, servo motors and a quadrature counter.
+            <div class="deviceDescription">This is a multi-purpose device tailored to behavioral experiments. It allows control of pokes, RGB LEDs, LEDs, cameras, servo motors and a quadrature counter.
             </div>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light">
-            <img class="card-img-top" src="../_static/images/devices/behaviorDevice.png" alt = "Photo of device Behavior" style="margin: 0 auto; width: 75%">
+            <img class="card-img-top" src="../_static/images/devices/alldevices\behaviorDevice.png" alt = "Photo of device Behavior" style="margin: 0 auto; width: 75%">
           </div>
         </div>
       </div>

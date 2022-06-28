@@ -73,7 +73,7 @@ See here for a list of existing devices. Don't see what you're looking for? Harp
       <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1 row-cols-xs-1">
         <div class="col mb-4">
           <div class="card h-100 text-center intro-card shadow">
-            <a href = "Devices/devicelist_filter.html">
+            <a href = "Devices/device_list.html">
               <img src="_static/images/noun_macbook.svg" class="card-img-top" height="160">
               <div class="card-body flex-fill">
                 <p class="card-reference">Harp device list</p>
@@ -116,6 +116,6 @@ To view a copy of this license, visit https://creativecommons.org/licenses/by-sa
     :titlesonly:
 
     About/index
-    Devices/devicelist_filter
+    Devices/device_list
     About/Using-HARP/index
     About/How-HARP-works/index

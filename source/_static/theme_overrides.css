@@ -437,6 +437,7 @@ i.fa-twitter-square:before {
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
+  color: black!important;
 }
 
 /* Add a light grey background on mouse-over */
@@ -445,7 +446,7 @@ i.fa-twitter-square:before {
 }
 
 /* Add a dark background to the active button */
-.btn.active {
+.btn.clicked {
   background-color: #666;
   color: white;
 }

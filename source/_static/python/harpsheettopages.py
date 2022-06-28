@@ -23,15 +23,8 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("C:\\Users\\Alex\\Deskt
 
 client = gspread.authorize(creds)
 
-devicesheet = client.open("HARP Devices").devices    
+devicesheet = client.open("HARP Devices").sheet1  
 devicedata = devicesheet.get_all_records() 
-
-#%% collect common register data from google sheet 
-
-client = gspread.authorize(creds)
-
-registersheet = client.open("HARP Devices").common_registers    
-registerdata = registersheet.get_all_records() 
 
 #%% create output files 
 
@@ -39,9 +32,15 @@ pageTemplateFile = join(docDir,"page_template.rst")
 cardTemplateFile = join(docDir,"card_template.rst")
 
 
-#%% replace device card template values with extracted device data from sheet 
+#%% clear allcards.rst
 
 allCardsFile = join(docDir,"allCards.rst")
+
+finCardsAll = open(allCardsFile, "w")
+finCardsAll.write("")
+finCardsAll.close()
+
+#%% replace device card template values with extracted device data from sheet 
 
 for count, idevice in enumerate(devicedata):
 
@@ -59,7 +58,9 @@ for count, idevice in enumerate(devicedata):
 
     deviceHandle = devicedata[count].get("deviceHandle")
 
-    devicePage = devicePage.replace('DEVICEHANDLE',deviceHandle)
+    devicePage = devicePage.replace('DEVICEHANDLE', "alldevices\\" + deviceHandle)
+    
+    devicePage = devicePage.replace('REFDEVICE',deviceHandle)
     
     devicePage = devicePage.replace('KEYFEATURES', devicedata[count].get("keyFeatures"))
     
@@ -79,7 +80,7 @@ for count, idevice in enumerate(devicedata):
     
     deviceCard = deviceCard.replace('DEVICEHANDLE', deviceHandle)
     
-    filenameOut = deviceHandle + ".rst"
+    filenameOut = "alldevices\\" + deviceHandle + ".rst"
     target = join(docDir,filenameOut)
 
     finPageOut = open(target, "wt")

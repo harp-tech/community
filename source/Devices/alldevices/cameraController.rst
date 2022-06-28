@@ -1,7 +1,7 @@
-.. _REFDEVICE:
+.. _cameraController:
 
 *************************************************
-Audio Amplifier Gen1
+Camera controller
 *************************************************
 
 .. raw:: html
@@ -16,7 +16,7 @@ Audio Amplifier Gen1
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light">
-            <img class="card-img-top" src="../_static/images/devices/audioAmplifier.png" alt = "Photo of device Audio Amplifier Gen1" style="margin: 0 auto; width: 75%">
+            <img class="card-img-top" src="../_static/images/devices/cameraController.png" alt = "Photo of device Camera controller" style="margin: 0 auto; width: 75%">
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
-.. _REFDEVICE:
+.. _audioSwitch:
 
 *************************************************
-DEVICENAME
+Audio Switch
 *************************************************
 
 .. raw:: html
@@ -9,14 +9,14 @@ DEVICENAME
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card card-body" >
-            <div class="DESCRIPTION" style="margin: 0 2rem">DESCRIPTION
+            <div class="deviceDescription">
             </div>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light">
-            <img class="card-img-top" src="IMAGESOURCE" alt = "Photo of device DEVICENAME" style="margin: 0 auto; width: 75%">
+            <img class="card-img-top" src="../_static/images/devices/alldevices\audioSwitch.png" alt = "Photo of device Audio Switch" style="margin: 0 auto; width: 75%">
           </div>
         </div>
       </div>
@@ -25,21 +25,21 @@ DEVICENAME
 
 Key Features
 ******************************************
-KEYFEATURES
+
 
 Use Cases
 ******************************************
-USECASES
+
 
 Connectivity
 ******************************************
-CONNECTIVITY
+
 
 Software Configuration Options
 ******************************************
-`Download software here: <SOFTWARELINK>`_
+`Download software here: <>`_
 
-SOFTWARECONFIG
+
 
 .. raw:: html
 
