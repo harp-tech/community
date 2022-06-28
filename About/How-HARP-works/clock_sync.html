@@ -150,7 +150,8 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="#introduction" id="id1">1. Introduction</a></p></li>
 <li><p><a class="reference internal" href="#serial-configuration" id="id2">2. Serial configuration</a></p></li>
-<li><p><a class="reference internal" href="#physical-connection" id="id3">4. Physical connection</a></p></li>
+<li><p><a class="reference internal" href="#example-code" id="id3">3. Example code</a></p></li>
+<li><p><a class="reference internal" href="#physical-connection" id="id4">4. Physical connection</a></p></li>
 </ul>
 </div>
 <p>One of the most important features of Harp is the ability of all Harp devices to share the same clock. Because any registered event is timestamped on the same clock, the temporal sequence of events is accurately determined even if events are detected by different devices.</p>
@@ -172,8 +173,10 @@ transmission to align themselves with the current time.</p>
 <p>IMPORTANT</p>
 <p>Since there’s no checksum to validate the packet, the sender must make sure that, if the header sequence is present in the, the packet is not sent.</p>
 </div>
-<p>3. Example code
-Example of a microcontroller C code:</p>
+</section>
+<section id="example-code">
+<h2><a class="toc-backref" href="#id3">3. Example code</a><a class="headerlink" href="#example-code" title="Permalink to this headline">#</a></h2>
+<p>Example of a microcontroller C code:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ISR</span><span class="p">(</span><span class="n">TCD0_OVF_vect</span><span class="p">,</span> <span class="n">ISR_NAKED</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">if</span> <span class="p">((</span><span class="o">*</span><span class="n">timestamp_byte0</span> <span class="o">==</span> <span class="mh">0xAA</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">*</span><span class="n">timestamp_byte1</span> <span class="o">==</span> <span class="mh">0xAF</span><span class="p">))</span> <span class="n">reti</span><span class="p">();</span>
@@ -205,7 +208,7 @@ Example of a microcontroller C code:</p>
 </div>
 </section>
 <section id="physical-connection">
-<h2><a class="toc-backref" href="#id3">4. Physical connection</a><a class="headerlink" href="#physical-connection" title="Permalink to this headline">#</a></h2>
+<h2><a class="toc-backref" href="#id4">4. Physical connection</a><a class="headerlink" href="#physical-connection" title="Permalink to this headline">#</a></h2>
 <p>The physical connection is made by a simple audio cable.</p>
 <p>The connector used is from Switchcraft Inc. and has the part number 35RASMT2BHNTRX</p>
 </section>
