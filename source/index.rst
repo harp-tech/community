@@ -34,7 +34,7 @@ See here for a list of existing devices. Don't see what you're looking for? Harp
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex" style="margin-top: 0em!important">
       <div class="card border-light">
-      <img class="card-img-top" src="_static/images/devices/behaviour_peripherals.jpg" style="align: right; scale: 30%">
+      <img class="card-img-top" src="_static/images/devices/behaviour_peripherals.jpg" style="align: right; scale: 90%">
       </div>
     </div>
   </div>

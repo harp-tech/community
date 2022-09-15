@@ -218,14 +218,3 @@
        </a>
       </div>
     </div>
-    <div class="col filterDiv Digital Interface Poke">
-      <div class="card device h-100">
-        <a href = alldevices/testDevice.html>
-        <img src="../_static/images/devices/testDevice.png" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">test device</h5>
-          <p class="card-text"></p>
-        </div>
-       </a>
-      </div>
-    </div>
