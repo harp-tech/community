@@ -1,22 +1,24 @@
-.. _cameraController:
+.. _:
 
 *************************************************
-Camera controller
+
 *************************************************
 
 .. raw:: html
 
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-          <div class="card card-body" >
+          <div class="card card-body border-light" >
             <div class="deviceDescription">
             </div>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-          <div class="card border-light">
-            <img class="card-img-top" src="../_static/images/devices/cameraController.png" alt = "Photo of device Camera controller" style="margin: 0 auto; width: 75%">
+          <div class="card border-light" style = "text-align: center">
+            <img class="card-img-top" src="../../_static/images/devices/.png" alt = "Photo of device " style="margin: 0 auto; width: 75%">
+            
+            
           </div>
         </div>
       </div>

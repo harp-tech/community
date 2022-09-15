@@ -41,11 +41,13 @@ client = gspread.authorize(creds)
 devicesheet = client.open("HARP Devices").sheet1  
 devicedata = devicesheet.get_all_records() 
 
-#%% create output files 
+#%% locate template files 
 
 pageTemplateFile = join(pyDir,"page_template.rst")
 cardTemplateFile = join(pyDir,"card_template.rst")
 repobuttonTemplate = join(pyDir,"repobutton_template.rst")
+deviceListTemplateFile = join(pyDir,"device_list_template.rst")
+filterTemplateFile = join(pyDir, "filter_template.rst")
 
 #%% clear allcards.rst
 
@@ -55,7 +57,10 @@ finCardsAll = open(allCardsFile, "w")
 finCardsAll.write("")
 finCardsAll.close()
 
+
 #%% replace device card template values with extracted device data from sheet 
+
+allCategories = list()
 
 for count, idevice in enumerate(devicedata):
 
@@ -66,7 +71,7 @@ for count, idevice in enumerate(devicedata):
     deviceCard = finCardTemplate.read()
     devicePage = finPageTemplate.read()
     repoButton = finRepobutton.read()
-
+    
     print(devicedata[count].get("deviceName"))
     
     devicePage = devicePage.replace('DEVICENAME', devicedata[count].get("deviceName"))
@@ -95,7 +100,13 @@ for count, idevice in enumerate(devicedata):
     
     deviceCard = deviceCard.replace('DEVICENAME', devicedata[count].get("deviceName"))
     
-    deviceCard = deviceCard.replace('CATEGORY', devicedata[count].get("categories"))
+    catLine = devicedata[count].get("categories")
+    categories = catLine.replace('\n', " ")    
+    deviceCard = deviceCard.replace('CATEGORY', categories)
+    
+    # collect all existing categories to make filter 
+    catSplit = catLine.split("\n")
+    allCategories = allCategories + catSplit
     
     deviceCard = deviceCard.replace('DEVICEHANDLE', deviceHandle)
     
@@ -133,7 +144,47 @@ for count, idevice in enumerate(devicedata):
     finCardsAll.write(deviceCard)
     finCardsAll.close()
 
+#%% insert cards into deviceList page 
+
+# open device list template file 
+finDeviceListTemplate = open(deviceListTemplateFile, "rt")
+deviceListTemplate = finDeviceListTemplate.read()
+
+# read allCard file just saved 
+finCardsAll = open(allCardsFile, "rt")
+allCards = finCardsAll.read() 
+finCardsAll.close()
+
+# enter allCard info into the template 
+deviceList = deviceListTemplate.replace('ALLCARDSHERE',allCards )
+
+# save to deviceList in docs 
+target = join(docDir, "device_list.rst")
+finPageOut = open(target, "wt", encoding="utf8")
+finPageOut.write(deviceList)
+finPageOut.close()
+
+#%% extract unique filter categories 
+
+a = open(filterTemplateFile, "rt")
+filtTemplate = a.read()
+a.close()
 
 
+filter_set = set(allCategories)
+
+filterCode = str()
+for id,val in enumerate(filter_set):
+    
+    filterMe = filtTemplate.replace("FILTERNAME", val)
+    print(filterMe)
+    filterCode = filterCode + filterMe
+    
+
+deviceList = deviceList.replace('FILTERSHERE', filterCode)
+
+finDevicePage = open(join(docDir,"device_list.rst"), "wt", encoding="utf8")
+finDevicePage.write(deviceList)
+finDevicePage.close()
 
 
