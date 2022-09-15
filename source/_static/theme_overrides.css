@@ -435,9 +435,10 @@ i.fa-twitter-square:before {
   border: none;
   outline: none;
   padding: 12px 16px;
+  margin: 10px;
   background-color: white;
   cursor: pointer;
-  color: black!important;
+  color: black !important;
 }
 
 /* Add a light grey background on mouse-over */
@@ -447,10 +448,10 @@ i.fa-twitter-square:before {
 
 /* Add a dark background to the active button */
 .btn.clicked {
-  background-color: #666;
+  background-color: #bee7fa;
   color: white;
+  outline: none !important;
 }
-
 /* format Key Features list*/
 .deviceFeatures {
   margin-top: 1rem;
@@ -500,10 +501,11 @@ th.highlight {
   border: 1.5px solid;
 }
 
-.button.github {
+.button.repo {
   background-color:#8fbd98;
   border-color:#8fbd98;
   color: black!important;
   width: 50%;
-  margin:20px;
+  margin: 10px;
+
 }

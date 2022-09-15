@@ -1,31 +1,17 @@
 *************************************************
-Template for Open Ephys Documentation
+Harp Documentation
 *************************************************
-This template is for building documentation of Open Ephys devices or software.
 
-How to use this template
+How to edit this documentation
 ####################################
+
 The documentation files are written in reStructuredText and saved in the 'source' folder. Sphinx is a documentation generator that converts these .rst files to HTML, so that browsers can display them. This sphinx 'build' can be performed locally so that you can preview pages in a browser, or it can be done by github remotely (see below for build instructions).
 
 Sphinx is a Python project, and each site relies on a specific list of python packages. These are listed in the Pipfile so that local or remote builds know which packages to install. This project uses pipenv, allowing the user to create a virtual environment in which the correct version of all required packages is installed (see 'local build').
 
-What to customize
+
+How to build this documentation
 ####################################
-Each documentation page is saved as an individual .rst file in the 'source' folder. Docs are written primarily in reStructuredText, and HTML can be used within the .rst file. Images are saved under _static. Besides obviously customizing the content of the pages, you will need to make sure to update:
-
-* License (at end of primary index page)
-* conf.py:
-   * project = "OE docs"  # change to your project name
-   * "github_repo": "doc-template",  # change to new repo
-   * html_logo = "_static/images/oe_logo_template.svg" # change to svg with your logo
-
-      Change the device name on the logo "oe_logo_name.svg"
-      Miso, Bold, 36 pt, Kerning: Optical
-      Be sure to expand text before saving as .svg as Miso will not load as font.
-* theme_overrides.css
-   * Change overhead navigation bar colour (.navbar { background: yourfavecolour })
-* .github/workflows/sphinx-build.yml
-   * git clone https://github.com/open-ephys/doc-template.git # change to your repo
 
 Building remotely
 *************************************************
@@ -48,54 +34,34 @@ Requirements (Python 3):
 
 Create a virtual environment with pipenv (will use the Pipfile for installing the necessary packages)
 
-.. code:: shell
+.. code:: install
 
    pipenv install
 
-then you can build the documentation
-
-.. code:: shell
-
-   pipenv run make html
-
-if you want run ``make`` multiple times, prepend ``pipenv run`` on each command can be annoying,
-you can spawn a subshell with
+then you can start a subshell
 
 .. code:: shell
 
    pipenv shell
 
-and then you can use ``make`` the usual way
+and build the documentation
 
-.. code:: shell
+.. code:: build
 
-   make html     # for html
-   make latex    # for latex
-   make latexpdf # for latex (will require latexpdf installed)
-   make          # list all the available output format
+   make html
 
 all the outputs will be in docs folder (for html: docs/html)
 
-without pipenv/virtualenv
--------------------------------------------------
-Requirements (system):
 
-* make
+Adding or editing Device Data
+####################################
 
-Requirements (Python 3):
+************************************
+Device data is collected and modified on a Google sheet. The deviceHandle will also be used to search for the device image, so be sure to name images with the devicehandle. There should not be more than one link entered in a cell that points to a repo or software.
 
-* sphinx
-* sphinx-rtd-theme
-* sphinxcontrib-wavedrom
+*************************************
+To update the documentation with the Google Sheet information, run the script 'harpsheetstopages.py' in the _static/python folder. This will use the card, page, and repo button template in order to generate a page and device card for each added device.
 
-After installing the requirements you can run
-
-.. code:: shell
-
-   make html     # for html
-   make latex    # for latex
-   make latexpdf # for latex (will require latexpdf installed)
-   make          # list all the available output format
 
 Acknowledgements
 ####################################

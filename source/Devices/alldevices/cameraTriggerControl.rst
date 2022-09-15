@@ -8,7 +8,7 @@ Camera trigger control
 
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-          <div class="card card-body" >
+          <div class="card card-body border-light" >
             <div class="deviceDescription">This device allows to trigger up to 2 cameras at a predefined frequency pulse or 2 servo motors. Connect cameras to CAM0 TRIG and CAM1 TRIG ports.
             </div>
           </div>
@@ -17,11 +17,18 @@ Camera trigger control
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light" style = "text-align: center">
             <img class="card-img-top" src="../../_static/images/devices/cameraTriggerControl.png" alt = "Photo of device Camera trigger control" style="margin: 0 auto; width: 75%">
-            <a href="https://github.com/harp-tech/harp_camera_controller">
-            <button class = "button github">
-            <i class="fab fa-github"></i> Design Files
-            </button>
-            </a>
+                    <a href="REPOLINK">
+        <button class = "button repo">
+        <i class="fab fa-github"></i> Design Files
+        </button>
+        </a>
+
+                    <a href="REPOLINK">
+        <button class = "button repo">
+        <i class="fab fa-bitbucket"></i> Design Files
+        </button>
+        </a>
+
           </div>
         </div>
       </div>
