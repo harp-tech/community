@@ -11,7 +11,8 @@ These are stored in the docs file under _static\python.
 
 
 Accessing google sheet via python instructions: https://towardsdatascience.com/turn-google-sheets-into-your-own-database-with-python-4aa0b4360ce7
-To access the google sheet, the script needs access to a key json file, loaded in as 'creds'. This is kept locally, not on the repo. 
+To access the google sheet, the script needs access to a key json file, loaded in as 'creds'. This is kept locally,
+not on the repo, as it contains access keys. 
 
 @author: Alex
 """
@@ -90,7 +91,18 @@ for count, idevice in enumerate(devicedata):
 
     devicePage = devicePage.replace('SOFTWARECONFIG', devicedata[count].get("softwareConfig"))
     
-    devicePage = devicePage.replace('SOFTWARELINK', devicedata[count].get("softwareLink"))
+    softwarelink= devicedata[count].get("softwareLink")
+    
+     
+    if softwarelink == '':
+        nothing = 2
+    
+    else:
+        softwareLine = "Download software here: <SOFTWARELINK>`_"
+        softwareLine = softwareLine.replace("SOFTWARELINK",softwarelink)
+        devicePage = devicePage.replace('SOFTWARELINK', softwarelink)
+    
+    
     
     devicePage = devicePage.replace('DESCRIPTION', devicedata[count].get("description"))
 

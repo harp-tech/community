@@ -47,7 +47,7 @@ Connectivity
 
 Software Configuration Options
 ******************************************
-`Download software here: <>`_
+`Download software here: <SOFTWARELINK>`_
 
 
 
