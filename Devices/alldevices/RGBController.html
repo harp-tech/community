@@ -191,8 +191,8 @@
 <span id="rgbcontroller"></span><h1>RGB Controller<a class="headerlink" href="#rgb-controller" title="Permalink to this headline">#</a></h1>
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-    <div class="card card-body" >
-      <div class="deviceDescription">
+    <div class="card card-body border-light" >
+      <div class="deviceDescription">Controls 2 arrays of colored LEDs according to RGB scale (Up to 32 LED on each array). Each LED has an associated index.
       </div>
     </div>
   </div>
@@ -200,27 +200,62 @@
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
     <div class="card border-light" style = "text-align: center">
       <img class="card-img-top" src="../../_static/images/devices/RGBController.png" alt = "Photo of device RGB Controller" style="margin: 0 auto; width: 75%">
-      <a href="">
-      <button class = "button github">
-      <i class="fab fa-github"></i> Design Files
-      </button>
-      </a>
+              <a href="REPOLINK">
+  <button class = "button repo">
+  <i class="fab fa-github"></i> Design Files
+  </button>
+  </a>
+
+
     </div>
   </div>
 </div>
 
 <div class="deviceFeatures"><section id="key-features">
 <h2>Key Features<a class="headerlink" href="#key-features" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Supports two LED array stripes</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Each stripe can have up to 32 LEDs</p></li>
+<li><p>Configurable color and intensity of each LED</p></li>
+</ul>
+</div></blockquote>
 </section>
 <section id="use-cases">
 <h2>Use Cases<a class="headerlink" href="#use-cases" title="Permalink to this headline">#</a></h2>
+<p>Experiments requiring configurable arrays of LEDs, both in intensity and color.</p>
 </section>
 <section id="connectivity">
 <h2>Connectivity<a class="headerlink" href="#connectivity" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>1x clock sync input (CLKIN) [stereo jack]</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>1x USB (for computer) [USB type C]</p></li>
+<li><p>1x 12V supply [barrel connector jack]</p></li>
+<li><p>1x I/O interface (5x general purpose digital outputs DO0-DO4, 1x general purpose digital input DI0) [screw terminal]</p></li>
+<li><p>1x digital output (DO0) [BNC]</p></li>
+<li><p>1x digital input (DI0) [BNC]</p></li>
+<li><p>1x Array 0 (G, S, 5V) [flick lock and screw terminal]</p></li>
+<li><p>1x Array 1 (G, S, 5V) [flick lock and screw terminal]</p></li>
+</ul>
+</div></blockquote>
 </section>
 <section id="software-configuration-options">
 <h2>Software Configuration Options<a class="headerlink" href="#software-configuration-options" title="Permalink to this headline">#</a></h2>
-<p><a href="#id1"><span class="problematic" id="id2">`Download software here: &lt;&gt;`_</span></a></p>
+<p><a class="reference external" href="https://bitbucket.org/fchampalimaud/downloads/downloads/Harp%20RGB%20Array%20v1.0.0.zip">Download software here:</a></p>
+<ul class="simple">
+<li><p>Digital input: general purpose , update LED array with a rising edge, or LED array is ON when pin is high</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Digital outputs: controlled by software, 1ms pulse when LED array is updated, 1ms pulse when LED array have a new configuration, toggle when LED array is updated, or toggle when LED array have a new configuration</p></li>
+<li><p>Event firing on: LED array status (enabled/updated and disabled), and digital input</p></li>
+</ul>
+</div></blockquote>
 </div></section>
 </section>
 

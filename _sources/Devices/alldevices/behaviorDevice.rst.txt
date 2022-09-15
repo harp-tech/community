@@ -8,7 +8,7 @@ Behavior
 
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-          <div class="card card-body" >
+          <div class="card card-body border-light" >
             <div class="deviceDescription">This is a multi-purpose device tailored to behavioral experiments. It allows control of pokes, RGB LEDs, LEDs, cameras, servo motors and a quadrature counter.
             </div>
           </div>
@@ -17,11 +17,18 @@ Behavior
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light" style = "text-align: center">
             <img class="card-img-top" src="../../_static/images/devices/behaviorDevice.png" alt = "Photo of device Behavior" style="margin: 0 auto; width: 75%">
-            <a href="https://github.com/harp-tech/harp_behavior">
-            <button class = "button github">
-            <i class="fab fa-github"></i> Design Files
-            </button>
-            </a>
+                    <a href="REPOLINK">
+        <button class = "button repo">
+        <i class="fab fa-github"></i> Design Files
+        </button>
+        </a>
+
+                    <a href="REPOLINK">
+        <button class = "button repo">
+        <i class="fab fa-bitbucket"></i> Design Files
+        </button>
+        </a>
+
           </div>
         </div>
       </div>

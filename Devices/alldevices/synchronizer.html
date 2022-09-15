@@ -189,38 +189,65 @@
                 
   <section id="synchronizer">
 <span id="id1"></span><h1>Synchronizer<a class="headerlink" href="#synchronizer" title="Permalink to this headline">#</a></h1>
-<div class="row">
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-    <div class="card card-body" >
-      <div class="deviceDescription">
-      </div>
-    </div>
-  </div>
+     <div class="row">
+       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
+         <div class="card card-body border-light" >
+           <div class="deviceDescription">Used to synchronize and align the different apparatus and devices present in a complex setup.
 
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-    <div class="card border-light" style = "text-align: center">
-      <img class="card-img-top" src="../../_static/images/devices/synchronizer.png" alt = "Photo of device Synchronizer" style="margin: 0 auto; width: 75%">
-      <a href="">
-      <button class = "button github">
-      <i class="fab fa-github"></i> Design Files
-      </button>
-      </a>
-    </div>
-  </div>
-</div>
+It timestamps each rising or falling edge of the 9 digital input signals. The sampling of the inputs can also be configured to use a ﬁxed sampling frequency.
+           </div>
+         </div>
+       </div>
 
-<div class="deviceFeatures"><section id="key-features">
+       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
+         <div class="card border-light" style = "text-align: center">
+           <img class="card-img-top" src="../../_static/images/devices/synchronizer.png" alt = "Photo of device Synchronizer" style="margin: 0 auto; width: 75%">
+
+                   <a href="REPOLINK">
+       <button class = "button repo">
+       <i class="fab fa-bitbucket"></i> Design Files
+       </button>
+       </a>
+
+         </div>
+       </div>
+     </div>
+
+     <div class="deviceFeatures"><section id="key-features">
 <h2>Key Features<a class="headerlink" href="#key-features" title="Permalink to this headline">#</a></h2>
+<p>Receives and timestamps up to 9 digital input signals</p>
+<blockquote>
+<div><p>Sampling on signal transitions or fixed sampling frequency up to 2 KHz</p>
+</div></blockquote>
 </section>
 <section id="use-cases">
 <h2>Use Cases<a class="headerlink" href="#use-cases" title="Permalink to this headline">#</a></h2>
+<p>Setups requiring signal alignment</p>
 </section>
 <section id="connectivity">
 <h2>Connectivity<a class="headerlink" href="#connectivity" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>1x clock sync input (CLKIN) [stereo jack]</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>1x USB (for computer) [USB type B]</p></li>
+<li><p>9x digital inputs (DIN0 to DIN5) [BNC], (DIN6 to DIN8) [screw terminal]</p></li>
+<li><p>1x digital output (DOUT0) [screw terminal]</p></li>
+</ul>
+</div></blockquote>
 </section>
 <section id="software-configuration-options">
 <h2>Software Configuration Options<a class="headerlink" href="#software-configuration-options" title="Permalink to this headline">#</a></h2>
-<p><a href="#id2"><span class="problematic" id="id3">`Download software here: &lt;&gt;`_</span></a></p>
+<p><a class="reference external" href="https://bitbucket.org/fchampalimaud/downloads/downloads/Harp%20Synchronizer%20v1.2.0.zip">Download software here:</a></p>
+<ul class="simple">
+<li><p>Input read trigger: SW only, any input changes, Rise/Fall edge of DIN0, Frequency of 100, 250, 500, 1000, or 2000 Hz</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Output Pin Mode: toggle when a read occur, equal to DIN0, pulses of 1, 2, or 5 ms, pulses of 250, or 500 us</p></li>
+</ul>
+</div></blockquote>
 </div></section>
 </section>
 

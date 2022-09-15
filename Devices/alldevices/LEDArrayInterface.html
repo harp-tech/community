@@ -191,8 +191,8 @@
 <span id="ledarrayinterface"></span><h1>LED Array Interface<a class="headerlink" href="#led-array-interface" title="Permalink to this headline">#</a></h1>
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-    <div class="card card-body" >
-      <div class="deviceDescription">
+    <div class="card card-body border-light" >
+      <div class="deviceDescription">Controlling LED arrays that require more power. Ideally for optostimulation experiments.
       </div>
     </div>
   </div>
@@ -200,27 +200,67 @@
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
     <div class="card border-light" style = "text-align: center">
       <img class="card-img-top" src="../../_static/images/devices/LEDArrayInterface.png" alt = "Photo of device LED Array Interface" style="margin: 0 auto; width: 75%">
-      <a href="">
-      <button class = "button github">
-      <i class="fab fa-github"></i> Design Files
-      </button>
-      </a>
+              <a href="REPOLINK">
+  <button class = "button repo">
+  <i class="fab fa-github"></i> Design Files
+  </button>
+  </a>
+
+
     </div>
   </div>
 </div>
 
 <div class="deviceFeatures"><section id="key-features">
 <h2>Key Features<a class="headerlink" href="#key-features" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Controls up to 2 separate RGB LED</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Arrays and one common Infrared LED</p></li>
+</ul>
+<p>2 Behavior Mode choices for each RGB LED Array: PWM or Interval</p>
+</div></blockquote>
 </section>
 <section id="use-cases">
 <h2>Use Cases<a class="headerlink" href="#use-cases" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Opto stimulation experiments that required arrays or matrix of LEDS</p></li>
+</ul>
 </section>
 <section id="connectivity">
 <h2>Connectivity<a class="headerlink" href="#connectivity" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>1x clock sync input (CLKIN) [stereo jack]</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>1x USB (for computer) [USB type B]</p></li>
+<li><p>1x flat cable</p></li>
+<li><p>2x Digital Inputs (IN0, IN1) [flick lock male pins]</p></li>
+<li><p>2x Digital Outputs (OUT0, OUT1) [flick lock male pins]</p></li>
+<li><p>1x connector for 2 LED Arrays [10-pin flat-cable]</p></li>
+</ul>
+</div></blockquote>
 </section>
 <section id="software-configuration-options">
 <h2>Software Configuration Options<a class="headerlink" href="#software-configuration-options" title="Permalink to this headline">#</a></h2>
-<p><a href="#id1"><span class="problematic" id="id2">`Download software here: &lt;&gt;`_</span></a></p>
+<p><a class="reference external" href="https://bitbucket.org/fchampalimaud/downloads/downloads/Harp%20Load%20Cells%20v1.1.0.zip">Download software here:</a></p>
+<ul class="simple">
+<li><p>LED Array PWM: frequency up to 2 KHz, duty cycle, number of pulses</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>LED Array Interval mode: period ON/OFF, number of pulses, period before repeat, number of repetitions</p></li>
+<li><p>Digital input</p></li>
+<li><p>Digital output</p></li>
+<li><p>LED Array Intensity</p></li>
+<li><p>Infrared LED intensity</p></li>
+<li><p>Event firing on: switches toggles, and input (IN0 or IN1) toggles</p></li>
+<li><p>Control bits: enable power into circuits, start and stop behavior, enable switches, digital outputs, auxiliary digital outputs, and status of the digital inputs</p></li>
+</ul>
+</div></blockquote>
 </div></section>
 </section>
 
