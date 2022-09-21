@@ -60,9 +60,9 @@ Connectivity
 
 Software Configuration Options
 ******************************************
+
 `Download software here: <https://bitbucket.org/fchampalimaud/downloads/downloads/Harp%20Sound%20Card%20v1.2.1.zip>`_
 
--
 
 .. raw:: html
 

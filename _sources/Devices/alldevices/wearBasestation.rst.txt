@@ -52,15 +52,9 @@ Connectivity
 
 Software Configuration Options
 ******************************************
+
 `Download software here: <https://www.google.com/url?q=https%3A%2F%2Fbitbucket.org%2Ffchampalimaud%2Fdownloads%2Fdownloads%2FHarp%2520Wear%2520v1.3.4.zip&sa=D&sntz=1&usg=AOvVaw1AFYY-Pa3m_w9ZNoSqKxZa>`_
 
-- Sensors: sample frequency, accelerometer range, gyroscope range
-- Sensor device wireless settings: device ID, IR LEDs ON period, TX power, and prioritization
-- Stimulation: trigger mode (SW-only or input signal dependent), ON/OFF periods, number of cycle repetitions, and current
-- I/O: input trigger mode and output behavior
-- Cameras: sample frequency
-- Servo motors: PWM and pulse periods
-- Event firing on: Acquisition status, Data arrives from sensor, Any of the inputs is read, Camera is triggered, DO0 each second and pulse ending on output DO1, Sensor metadata, HW and SW Versions of both sensor and receiver
 
 .. raw:: html
 

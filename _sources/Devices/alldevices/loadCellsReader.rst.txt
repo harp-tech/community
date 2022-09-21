@@ -40,10 +40,6 @@ Connectivity
 - 4x flick lock connectors (X1 to X4) with 4 analog inputs each (5V, I+, I-, 0V)
  - 1x digital output [RJ45]
 
-Software Configuration Options
-******************************************
-`Download software here: <SOFTWARELINK>`_
-
 
 
 .. raw:: html

@@ -56,13 +56,9 @@ Connectivity
 
 Software Configuration Options
 ******************************************
+
 `Download software here: <https://www.google.com/url?q=https%3A%2F%2Fbitbucket.org%2Ffchampalimaud%2Fdownloads%2Fdownloads%2FHarp%2520Camera%2520Controller%2520v1.0.1.zip&sa=D&sntz=1&usg=AOvVaw37Pdw8O64-V-p5cilpQj_C>`_
 
-- Cameras: sample frequency (up to 1KHz)
-- Servo motor controller: PWM period (microseconds) and pulse period (microseconds)
-- Digital input: General purpose or enable camera/motor depending on IN0 state
-- Sync pulses (up to 100s)
-- Event firing on: trigger and synchronism outputs, and IN0
 
 .. raw:: html
 

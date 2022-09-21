@@ -37,11 +37,7 @@ Connectivity
 ******************************************
 CONNECTIVITY
 
-Software Configuration Options
-******************************************
-`Download software here: <SOFTWARELINK>`_
-
-SOFTWARECONFIG
+SOFTWARESECTION
 
 .. raw:: html
 

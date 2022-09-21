@@ -49,9 +49,9 @@ Connectivity
 
 Software Configuration Options
 ******************************************
+
 `Download software here: <https://bitbucket.org/fchampalimaud/downloads/downloads/Harp%20Audio%20Switch%20v1.0.0.zip>`_
 
--
 
 .. raw:: html
 

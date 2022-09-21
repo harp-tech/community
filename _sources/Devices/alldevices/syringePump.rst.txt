@@ -39,8 +39,8 @@ Connectivity
 
 Software Configuration Options
 ******************************************
-`Download software here: <->`_
 
+`Download software here: <->`_
 
 
 .. raw:: html

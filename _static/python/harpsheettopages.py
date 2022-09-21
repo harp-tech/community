@@ -49,6 +49,7 @@ cardTemplateFile = join(pyDir,"card_template.rst")
 repobuttonTemplate = join(pyDir,"repobutton_template.rst")
 deviceListTemplateFile = join(pyDir,"device_list_template.rst")
 filterTemplateFile = join(pyDir, "filter_template.rst")
+softwareFile = join(pyDir, "software_section_template.rst")
 
 #%% clear allcards.rst
 
@@ -68,10 +69,12 @@ for count, idevice in enumerate(devicedata):
     finCardTemplate = open(cardTemplateFile, "rt")
     finPageTemplate = open(pageTemplateFile, "rt")
     finRepobutton = open(repobuttonTemplate, "rt")
+    finSoftware = open(softwareFile, "rt")
 
     deviceCard = finCardTemplate.read()
     devicePage = finPageTemplate.read()
     repoButton = finRepobutton.read()
+    softwareSection = finSoftware.read()
     
     print(devicedata[count].get("deviceName"))
     
@@ -95,13 +98,10 @@ for count, idevice in enumerate(devicedata):
     
      
     if softwarelink == '':
-        nothing = 2
-    
-    else:
-        softwareLine = "Download software here: <SOFTWARELINK>`_"
-        softwareLine = softwareLine.replace("SOFTWARELINK",softwarelink)
-        devicePage = devicePage.replace('SOFTWARELINK', softwarelink)
-    
+        devicePage = devicePage.replace('SOFTWARESECTION', "")
+    else: 
+        softwareLine = softwareSection.replace("SOFTWARELINK",softwarelink)
+        devicePage = devicePage.replace('SOFTWARESECTION', softwareLine)
     
     
     devicePage = devicePage.replace('DESCRIPTION', devicedata[count].get("description"))
@@ -189,7 +189,6 @@ filterCode = str()
 for id,val in enumerate(filter_set):
     
     filterMe = filtTemplate.replace("FILTERNAME", val)
-    print(filterMe)
     filterCode = filterCode + filterMe
     
 

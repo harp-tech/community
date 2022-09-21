@@ -44,10 +44,6 @@ Connectivity
  - 2x 4mm banana outputs
  - 1x power switch
 
-Software Configuration Options
-******************************************
-`Download software here: <SOFTWARELINK>`_
-
 
 
 .. raw:: html

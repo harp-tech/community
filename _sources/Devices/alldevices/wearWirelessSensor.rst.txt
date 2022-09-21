@@ -45,10 +45,6 @@ Connectivity
 ******************************************
 
 
-Software Configuration Options
-******************************************
-`Download software here: <SOFTWARELINK>`_
-
 
 
 .. raw:: html

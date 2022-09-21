@@ -53,11 +53,9 @@ Connectivity
 
 Software Configuration Options
 ******************************************
+
 `Download software here: <https://bitbucket.org/fchampalimaud/downloads/downloads/Harp%20RGB%20Array%20v1.0.0.zip>`_
 
-- Digital input: general purpose , update LED array with a rising edge, or LED array is ON when pin is high
- - Digital outputs: controlled by software, 1ms pulse when LED array is updated, 1ms pulse when LED array have a new configuration, toggle when LED array is updated, or toggle when LED array have a new configuration
- - Event firing on: LED array status (enabled/updated and disabled), and digital input
 
 .. raw:: html
 

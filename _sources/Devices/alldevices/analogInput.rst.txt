@@ -51,10 +51,6 @@ Connectivity
  - 1x digital input (screw terminal)
  - 5V output (screw terminal)
 
-Software Configuration Options
-******************************************
-`Download software here: <SOFTWARELINK>`_
-
 
 
 .. raw:: html
