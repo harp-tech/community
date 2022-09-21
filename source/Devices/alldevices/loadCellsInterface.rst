@@ -52,9 +52,9 @@ Connectivity
 
 Software Configuration Options
 ******************************************
+
 `Download software here: <https://bitbucket.org/fchampalimaud/downloads/downloads/Harp%20Load%20Cells%20v1.1.0.zip>`_
 
--
 
 .. raw:: html
 

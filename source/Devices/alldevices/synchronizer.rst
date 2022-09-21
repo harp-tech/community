@@ -51,10 +51,9 @@ Connectivity
 
 Software Configuration Options
 ******************************************
+
 `Download software here: <https://bitbucket.org/fchampalimaud/downloads/downloads/Harp%20Synchronizer%20v1.2.0.zip>`_
 
-- Input read trigger: SW only, any input changes, Rise/Fall edge of DIN0, Frequency of 100, 250, 500, 1000, or 2000 Hz
- - Output Pin Mode: toggle when a read occur, equal to DIN0, pulses of 1, 2, or 5 ms, pulses of 250, or 500 us
 
 .. raw:: html
 

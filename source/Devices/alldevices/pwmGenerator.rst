@@ -56,11 +56,9 @@ Connectivity
 
 Software Configuration Options
 ******************************************
+
 `Download software here: <https://www.google.com/url?q=https%3A%2F%2Fbitbucket.org%2Ffchampalimaud%2Fdownloads%2Fdownloads%2FHarp%2520Multi%2520Pwm%2520Generator%2520v2.1.0.zip&sa=D&sntz=1&usg=AOvVaw2Wg0b379x9WilnpYdOI8wc>`_
 
-- PWM outputs: Frequency, duty cycle, number of pulses, Mode (count pulses or infinite)
-- Triggers: mask and mode (start or start and stop)
-- Event firing on: start and stop of each PWM burst
 
 .. raw:: html
 

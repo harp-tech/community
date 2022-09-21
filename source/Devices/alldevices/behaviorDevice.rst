@@ -62,12 +62,9 @@ Connectivity
 
 Software Configuration Options
 ******************************************
+
 `Download software here: <https://www.google.com/url?q=https%3A%2F%2Fbitbucket.org%2Ffchampalimaud%2Fdownloads%2Fdownloads%2FHarp%2520Behavior%2520v2.0.0.zip&sa=D&sntz=1&usg=AOvVaw1HGd7wVYA0V_2_2wDvRWE7>`_
 
-- Outputs: pulse duration, PWM (frequency and duty cycle)
-- LEDs: RGB values, current, and maximum nominal current
-- Extended features: cameras, servo motors, and quadrature counter
-- Event firing on:  Digital DIs from Ports / Infrared beams from Pokes, Digital DIOs from Ports, Data (includes Analog Input and Encoder), When send a trigger to camera on DO 0, When send a trigger to camera on DO 1
 
 .. raw:: html
 

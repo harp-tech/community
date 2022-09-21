@@ -51,16 +51,9 @@ Connectivity
 
 Software Configuration Options
 ******************************************
+
 `Download software here: <https://bitbucket.org/fchampalimaud/downloads/downloads/Harp%20Load%20Cells%20v1.1.0.zip>`_
 
-- LED Array PWM: frequency up to 2 KHz, duty cycle, number of pulses
- - LED Array Interval mode: period ON/OFF, number of pulses, period before repeat, number of repetitions
- - Digital input 
- - Digital output
- - LED Array Intensity
- - Infrared LED intensity
- - Event firing on: switches toggles, and input (IN0 or IN1) toggles
- - Control bits: enable power into circuits, start and stop behavior, enable switches, digital outputs, auxiliary digital outputs, and status of the digital inputs
 
 .. raw:: html
 

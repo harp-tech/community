@@ -56,10 +56,8 @@ all the outputs will be in docs folder (for html: docs/html)
 Adding or editing Device Data
 ####################################
 
-************************************
 Device data is collected and modified on a Google sheet. The deviceHandle will also be used to search for the device image, so be sure to name images with the devicehandle. There should not be more than one link entered in a cell that points to a repo or software.
 
-*************************************
 To update the documentation with the Google Sheet information, run the script 'harpsheetstopages.py' in the _static/python folder. This will use the card, page, and repo button template in order to generate a page and device card for each added device.
 
 

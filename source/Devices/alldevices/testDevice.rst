@@ -1,7 +1,7 @@
 .. _testDevice:
 
 *************************************************
-BananaPhone
+Test Device
 *************************************************
 
 .. raw:: html
@@ -16,7 +16,7 @@ BananaPhone
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light" style = "text-align: center">
-            <img class="card-img-top" src="../../_static/images/devices/testDevice.png" alt = "Photo of device BananaPhone" style="margin: 0 auto; width: 75%">
+            <img class="card-img-top" src="../../_static/images/devices/testDevice.png" alt = "Photo of device Test Device" style="margin: 0 auto; width: 75%">
             
             
           </div>
@@ -36,10 +36,6 @@ Use Cases
 Connectivity
 ******************************************
 
-
-Software Configuration Options
-******************************************
-`Download software here: <>`_
 
 
 
