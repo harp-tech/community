@@ -21,9 +21,7 @@ not on the repo, as it contains access keys.
 #%% import 
 
 from os.path import join 
-
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+import pandas as pd
 
 #%% set file and folder locations 
 
@@ -31,16 +29,10 @@ pyDir = "C:\\Users\\Alex\\Documents\\Repos\\harp-docs\\source\\_static\python\\"
 
 docDir = "C:\\Users\\Alex\\Documents\\Repos\\harp-docs\\source\\Devices\\"
 
-scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
-
-creds = ServiceAccountCredentials.from_json_keyfile_name("C:\\Users\\Alex\\Desktop\\harp-352616-f57e1230cd03.json",scope)
-
 #%% collect device data from google sheet 
 
-client = gspread.authorize(creds)
-
-devicesheet = client.open("HARP Devices").sheet1  
-devicedata = devicesheet.get_all_records() 
+df = pd.read_excel(join(pyDir,"HARP_Devices.xlsx")) 
+devicedata = df.fillna("")
 
 #%% locate template files 
 
@@ -76,25 +68,25 @@ for count, idevice in enumerate(devicedata):
     repoButton = finRepobutton.read()
     softwareSection = finSoftware.read()
     
-    print(devicedata[count].get("deviceName"))
+    print(devicedata.iloc[count]['deviceName'])
     
-    devicePage = devicePage.replace('DEVICENAME', devicedata[count].get("deviceName"))
+    devicePage = devicePage.replace('DEVICENAME', devicedata.iloc[count]['deviceName'])
 
-    devicePage = devicePage.replace('CONNECTIVITY', devicedata[count].get("connections"))
+    devicePage = devicePage.replace('CONNECTIVITY', devicedata.iloc[count]["connections"])
 
-    deviceHandle = devicedata[count].get("deviceHandle")
+    deviceHandle = devicedata.iloc[count]["deviceHandle"]
 
     devicePage = devicePage.replace('DEVICEHANDLE', deviceHandle)
     
     devicePage = devicePage.replace('REFDEVICE',deviceHandle)
     
-    devicePage = devicePage.replace('KEYFEATURES', devicedata[count].get("keyFeatures"))
+    devicePage = devicePage.replace('KEYFEATURES', devicedata.iloc[count]["keyFeatures"])
     
-    devicePage = devicePage.replace('USECASES', devicedata[count].get("useCases"))
+    devicePage = devicePage.replace('USECASES', devicedata.iloc[count]["useCases"])
 
-    devicePage = devicePage.replace('SOFTWARECONFIG', devicedata[count].get("softwareConfig"))
+    devicePage = devicePage.replace('SOFTWARECONFIG', devicedata.iloc[count]["softwareConfig"])
     
-    softwarelink= devicedata[count].get("softwareLink")
+    softwarelink = devicedata.iloc[count]["softwareLink"]
     
      
     if softwarelink == '':
@@ -104,15 +96,13 @@ for count, idevice in enumerate(devicedata):
         devicePage = devicePage.replace('SOFTWARESECTION', softwareLine)
     
     
-    devicePage = devicePage.replace('DESCRIPTION', devicedata[count].get("description"))
-
-    devicePage = devicePage.replace('GITHUBLINK', devicedata[count].get("github"))
+    devicePage = devicePage.replace('DESCRIPTION', devicedata.iloc[count]["description"])
         
-    deviceCard = deviceCard.replace('CARDTEXT', devicedata[count].get("cardText"))
+    deviceCard = deviceCard.replace('CARDTEXT', devicedata.iloc[count]["cardText"])
     
-    deviceCard = deviceCard.replace('DEVICENAME', devicedata[count].get("deviceName"))
+    deviceCard = deviceCard.replace('DEVICENAME', devicedata.iloc[count]["deviceName"])
     
-    catLine = devicedata[count].get("categories")
+    catLine = devicedata.iloc[count]["categories"]
     categories = catLine.replace('\n', " ")    
     deviceCard = deviceCard.replace('CATEGORY', categories)
     
@@ -124,24 +114,24 @@ for count, idevice in enumerate(devicedata):
     
     
     # repos can be github and/ or bitbucket: create button for each repo present    
-    githublink = devicedata[count].get("github")
+    githublink = devicedata.iloc[count]["github"]
     
     if githublink == '':
         repoButtonGH = githublink
     else:
         repoButtonGH = repoButton.replace('REPOLINK', githublink)
-        repoButtonGH = repoButton.replace('WHICHREPO', "github")
+        repoButtonGH = repoButtonGH.replace('WHICHREPO', "github")
         
     devicePage = devicePage.replace('REPOBUTTON1', repoButtonGH)
     
     
-    bitbucketlink = devicedata[count].get("bitbucket")
+    bitbucketlink = devicedata.iloc[count]["bitbucket"]
     
     if bitbucketlink == '':
         repoButtonBB = bitbucketlink
     else:
         repoButtonBB = repoButton.replace('REPOLINK', bitbucketlink)
-        repoButtonBB = repoButton.replace('WHICHREPO', "bitbucket")
+        repoButtonBB = repoButtonBB.replace('WHICHREPO', "bitbucket")
     
     devicePage = devicePage.replace('REPOBUTTON2', repoButtonBB)
     
