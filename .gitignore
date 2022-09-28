@@ -1,6 +1,5 @@
 # sphinx build folder
 docs/*
-make.bat
 
 # Compiled source #
 ###################
