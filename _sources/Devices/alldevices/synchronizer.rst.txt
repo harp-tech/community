@@ -20,7 +20,7 @@ Synchronizer
           <div class="card border-light" style = "text-align: center">
             <img class="card-img-top" src="../../_static/images/devices/synchronizer.png" alt = "Photo of device Synchronizer" style="margin: 0 auto; width: 75%">
             
-                    <a href="REPOLINK">
+                    <a href="https://bitbucket.org/fchampalimaud/device.synchronizer/src/master/">
         <button class = "button repo">
         <i class="fab fa-bitbucket"></i> Design Files
         </button>

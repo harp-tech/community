@@ -17,12 +17,12 @@ Multi PWM generator
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
           <div class="card border-light" style = "text-align: center">
             <img class="card-img-top" src="../../_static/images/devices/pwmGenerator.png" alt = "Photo of device Multi PWM generator" style="margin: 0 auto; width: 75%">
-            
-                    <a href="REPOLINK">
-        <button class = "button repo">
-        <i class="fab fa-bitbucket"></i> Design Files
-        </button>
-        </a>
+
+            <a 
+            </a>
+            <a href="https://bitbucket.org/fchampalimaud/device.multipwm/src/master/"><button class = "button repo"><i class="fab fa-bitbucket"></i> Design Files</button>
+
+            </a>            
 
           </div>
         </div>
@@ -32,17 +32,17 @@ Multi PWM generator
 
 Key Features
 ******************************************
-- PWM output generation
-- Configurable frequency and duty cycle
-- Frequency up to 32 KHz
-- Enabling mechanisms by software or hardware to prevent erroneous triggerings
-- Start and stop triggers (also by software)
-- Infinite or configured number of pulses
+- PWM output generation
+- Configurable frequency and duty cycle
+- Frequency up to 32 KHz
+- Enabling mechanisms by software or hardware to prevent erroneous triggerings
+- Start and stop triggers (also by software)
+- Infinite or configured number of pulses
 - Complete trigger mechanisms
 
 Use Cases
 ******************************************
-- Camera triggering
+- Camera triggering
 - Laser control
 
 Connectivity
