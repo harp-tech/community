@@ -8,11 +8,12 @@ Device List
 
     <div id="myBtnContainer">
       <button class="btn clicked" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('Sound')">Sound</button>
-    <button class="btn" onclick="filterSelection('Multipurpose')">Multipurpose</button>
+          <button class="btn" onclick="filterSelection('Sensor Interface')">Sensor Interface</button>
     <button class="btn" onclick="filterSelection('Digital Interface')">Digital Interface</button>
     <button class="btn" onclick="filterSelection('Analog Interface')">Analog Interface</button>
-    <button class="btn" onclick="filterSelection('Sensor Interface')">Sensor Interface</button>
+    <button class="btn" onclick="filterSelection('Multipurpose')">Multipurpose</button>
+    <button class="btn" onclick="filterSelection('Timestamp Generators')">Timestamp Generators</button>
+    <button class="btn" onclick="filterSelection('Sound')">Sound</button>
 
     </div>
 
@@ -181,6 +182,61 @@ Device List
         <div class="card-body">
           <h5 class="card-title">Multi PWM generator</h5>
           <p class="card-text">This board provides 4 independent PWM outputs that can be triggered by four different input triggers or all at the same time.</p>
+        </div>
+       </a>
+      </div>
+    </div>
+    <div class="col filterDiv Digital Interface">
+      <div class="card device h-100">
+        <a href = alldevices/synchronizer.html>
+        <img src="../_static/images/devices/synchronizer.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Synchronizer</h5>
+          <p class="card-text"></p>
+        </div>
+       </a>
+      </div>
+    </div>
+    <div class="col filterDiv Digital Interface">
+      <div class="card device h-100">
+        <a href = alldevices/inputExpander.html>
+        <img src="../_static/images/devices/inputExpander.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Input Expander</h5>
+          <p class="card-text"></p>
+        </div>
+       </a>
+      </div>
+    </div>
+    <div class="col filterDiv Digital Interface">
+      <div class="card device h-100">
+        <a href = alldevices/outputExpander.html>
+        <img src="../_static/images/devices/outputExpander.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Output Expander</h5>
+          <p class="card-text"></p>
+        </div>
+       </a>
+      </div>
+    </div>
+    <div class="col filterDiv Multipurpose">
+      <div class="card device h-100">
+        <a href = alldevices/ibldevice.html>
+        <img src="../_static/images/devices/ibldevice.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">IBL Behavior Control</h5>
+          <p class="card-text"></p>
+        </div>
+       </a>
+      </div>
+    </div>
+    <div class="col filterDiv Timestamp Generators">
+      <div class="card device h-100">
+        <a href = alldevices/clockSynchronizer.html>
+        <img src="../_static/images/devices/clockSynchronizer.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Clock synchronizer</h5>
+          <p class="card-text"></p>
         </div>
        </a>
       </div>
