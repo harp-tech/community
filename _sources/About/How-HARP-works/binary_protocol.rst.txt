@@ -1,6 +1,5 @@
-:notoc:
-
 .. _refbinaryprotocol:
+
 *************************************************
 Harp Binary Protocol
 *************************************************
@@ -49,31 +48,31 @@ A Harp message sent between devices follows this structure:
 Where each section corresponds to the following information:
 
 **[MessageType]** (1 byte)
-_____________________________
+__________________________________________________________
 - 1 – Read : The device requests the content of the register with address [Address]
 - 2 – Write : The device is writing the content to the register with address [Address]
 - 3 – Event : The device is sending the content of the register with address [Address]
 
 **[Length]** (1 byte)
-_____________________________
+__________________________________________________________
 
 - The number of bytes in the Harp Message still to be read, i.e., the number of bytes after
 the field [Length].
 
 **[Address]** (1 byte)
-_____________________________
+__________________________________________________________
 
 - The address to which the Harp Message refers to.
 
 **[Port]** (1 byte)
-_____________________________
+__________________________________________________________
 
 - If the device is a Hub of Harp Messages, this field indicates the origin or destination of
 the Harp Message.
 To point to the device itself this field should be equal to 255.
 
 **[PayloadType]** (1 byte)
-_____________________________
+__________________________________________________________
 
 - Indicates the type of data available on the [Payload]. The [Payload] can contain:
 
