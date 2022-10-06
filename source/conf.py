@@ -22,8 +22,8 @@ from datetime import datetime, timezone
 # -- Project information -----------------------------------------------------
 
 project = "HARP Documentation"
-copyright = "2010-{}, Open Ephys & Contributors".format(datetime.now(timezone.utc).year)
-author = "Open Ephys Production Site & Contributors"
+copyright = "2022-{}, Harp & Contributors".format(datetime.now(timezone.utc).year)
+author = "Harp & Contributors"
 
 # The short X.Y version
 version = "0.0"
@@ -128,7 +128,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (main_doc, "oe-docs.tex", "Open Ephys Documentation", "Open Ephys", "manual"),
+    (main_doc, "docs.tex", "Harp Documentation", "Harp", "manual"),
 ]
 
 
@@ -136,7 +136,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(main_doc, "oe-docs", "Open Ephys Documentation", [author], 1)]
+man_pages = [(main_doc, "docs", "Harp", [author], 1)]
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -193,8 +193,8 @@ html_sidebars = {
 html_favicon = "_static/images/harp.png"
 
 html_context = {
-    "github_user": "ahleighton",
-    "github_repo": "harp-docs",
+    "github_user": "filcarv",
+    "github_repo": "docs",
     "github_version": "main",
     "doc_path": "source",
     "css_files": ["_static/theme_overrides.css",],
