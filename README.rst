@@ -1,6 +1,8 @@
 *************************************************
-Harp Documentation
+Harp Documentation - DEPRECATED
 *************************************************
+
+**This repository is being superseded by a new DocFX website at** `harp-tech/harp-tech.github.io <https://github.com/harp-tech/harp-tech.github.io>`_. **It will be archived and marked as read-only.**
 
 How to edit this documentation
 ####################################
